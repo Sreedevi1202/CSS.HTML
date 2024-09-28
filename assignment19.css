@@ -1,0 +1,27 @@
+/* Custom Styles for Bootstrap Overrides */
+.custom-card {
+    border: 2px solid #4CAF50;
+    transition: transform 0.3s ease;
+}
+
+.custom-card:hover {
+    transform: scale(1.05);
+}
+
+.navbar {
+    background-color: #007bff !important;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff !important;
+}
+
+.nav-link {
+    color: #fff !important;
+}
+
+.nav-link:hover {
+    color: #ffcc00 !important;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 1: Selectors and Properties</title>
+    <style>
+        /* Element selector */
+        p {
+            font-size: 20px;
+            color:#343434;
+        }
+
+        /* Class selector */
+        .highlight {
+            font-weight: bold;
+            background-color:lightyellow;
+        }
+
+        /* ID selector */
+        #unique-item {
+            font-size: 22px;
+            color:green;
+        }
+
+        /* Attribute selector */
+        a[href^="https"] {
+            color:navy;
+        }
+
+        /* Pseudo-class selector */
+        a:hover {
+            color: red;
+        }
+
+        /* Pseudo-element selector */
+        p::first-letter {
+            font-size: 2em;
+            color:crimson;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS</h1>
+    <p>CSS is the acronym of “Cascading Style Sheets”. CSS is a computer language for laying out and structuring web pages (HTML or XML). This language contains coding elements and is composed of these “cascading style sheets” which are equally called CSS files.</p>
+    <p class="highlight">It is used to style and layout web pages by controlling the visual presentation of HTML elements, including colors, fonts, and spacing. It enables responsive design and allows separation of content (HTML) from design, enhancing flexibility and maintainability.</p>
+    <p id="unique-item">The id of an element is unique within a page, so the id selector is used to select one unique element! To select an element with a specific id, write a hash (#) character, followed by the id of the element.</p>
+    <a href="https://example.com">Here is the link to learn about CSS programming language.</a>
+</body>
+</html>

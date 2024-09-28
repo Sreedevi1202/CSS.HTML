@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Grid Layout</title>
+    <style>
+    * {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Main Grid Layout */
+.container {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas: 
+        "header header"
+        "sidebar content"
+        "footer footer";
+    gap: 10px;
+    height: 100vh;
+    padding: 10px;
+}
+
+.header {
+    grid-area: header;
+    background-color: #4CAF50;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+.sidebar {
+    grid-area: sidebar;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+.content {
+    grid-area: content;
+    background-color: #fff;
+    padding: 20px;
+}
+
+/* Nested Grid inside the Content */
+.nested-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+}
+
+.nested-item {
+    background-color: #ddd;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer {
+    grid-area: footer;
+    background-color: #333;
+    color: navy;
+    text-align: center;
+    padding: 20px;
+}
+    </style>
+</head>
+<body>
+    <h1>Advanced Grid Layout</h1>
+    <div class="container">
+        <div class="header">Header</div>
+        <div class="sidebar">Sidebar</div>
+        <div class="content">
+            <div class="nested-grid">
+                <div class="nested-item nested-1">Nested Item 1</div>
+                <div class="nested-item nested-2">Nested Item 2</div>
+                <div class="nested-item nested-3">Nested Item 3</div>
+                <div class="nested-item nested-4">Nested Item 4</div>
+            </div>
+        </div>
+        <div class="footer">Footer</div>
+    </div>
+</body>
+</html>

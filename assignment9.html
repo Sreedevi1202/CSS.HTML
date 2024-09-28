@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Web Design with Media Queries</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+    * {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    background-color: teal;
+    color: white;
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.box {
+    width: 30%;
+    background-color:silver;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    .box {
+        width: 100%;
+    }
+}
+
+/* Tablet */
+@media (min-width: 601px) and (max-width: 900px) {
+    .box {
+        width: 45%;
+    }
+}
+
+/* Desktop */
+@media (min-width: 901px) {
+    .box {
+        width: 30%;
+    }
+}
+</style>
+</head>
+<body>
+    <header>
+        <h1>Responsive Layout</h1>
+    </header>
+    <div class="container">
+        <div class="box">Box 1</div>
+        <div class="box">Box 2</div>
+        <div class="box">Box 3</div>
+    </div>
+</body>
+</html>

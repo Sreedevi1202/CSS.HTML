@@ -1,0 +1,75 @@
+/* Container styling */
+.container {
+    text-align: center;
+    margin-top: 50px;
+}
+
+/* Styling for interactive button */
+.interactive-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: lightblue;
+    border: 2px solid blue;
+    cursor: pointer;
+    position: relative;
+}
+
+/* Pseudo-classes for button */
+.interactive-button:hover {
+    background-color: blue;
+    color: white;
+}
+
+.interactive-button:active {
+    background-color: darkblue;
+}
+
+.interactive-button::before {
+    content: "✨";
+    position: absolute;
+    left: -25px;
+    top: 0;
+}
+
+.interactive-button::after {
+    content: "✨";
+    position: absolute;
+    right: -25px;
+    top: 0;
+}
+
+/* Focus input styling */
+.focus-input {
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid gray;
+    outline: none;
+}
+
+.focus-input:focus {
+    border-color: green;
+    background-color: lightgreen;
+}
+
+/* nth-child pseudo-class */
+.nth-child-demo {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.nth-child-demo li {
+    padding: 10px;
+    font-size: 18px;
+    background-color:lightblue;
+    margin: 5px 0;
+}
+
+.nth-child-demo li:nth-child(odd) {
+    background-color: lightskyblue;
+}
+
+.nth-child-demo li:nth-child(even) {
+    background-color:lightblue;
+}

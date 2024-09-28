@@ -1,0 +1,51 @@
+:root {
+  --primary-color:lightskyblue;
+  --secondary-color: #2ecc71;
+  --font-color: #333;
+  --font-family: 'Arial, sans-serif';
+  --base-font-size: 16px;
+  --heading-font-size: 2rem;
+  --card-background: #f9f9f9;
+  --card-padding: 20px;
+  --card-border-radius: 8px;
+  --spacing-large: 40px;
+}
+
+/* Global Styles */
+body {
+  font-family: var(--font-family);
+  font-size: var(--base-font-size);
+  color: var(--font-color);
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: var(--primary-color);
+  color: white;
+  text-align: center;
+  padding: var(--spacing-large);
+}
+
+h1 {
+  font-size: var(--heading-font-size);
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: var(--spacing-large);
+}
+
+.card {
+  background-color: var(--card-background);
+  padding: var(--card-padding);
+  border-radius: var(--card-border-radius);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  width: 300px;
+}
+
+h2 {
+  color: var(--secondary-color);
+}
